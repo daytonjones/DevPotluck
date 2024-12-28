@@ -44,8 +44,6 @@ The script accepts the following arguments:
 ```
 **Output:**
 ```plaintext
-[DEBUG] Extracted measurement: weather
-[DEBUG] Extracted WHERE clause: city = 'San Francisco'
 Translated Flux Query:
 from(bucket: "weather")
 |> range(start: -1h)
@@ -60,7 +58,6 @@ from(bucket: "weather")
 ```
 **Output:**
 ```plaintext
-[DEBUG] Extracted bucket: weather
 Translated InfluxQL Query:
 SELECT MEAN(*) FROM weather WHERE r.city == 'San Francisco'
 ```
