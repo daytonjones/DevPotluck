@@ -4,10 +4,11 @@ Welcome to **DevPotluck**, a collection of scripts and snippets that I’ve foun
 
 Think of this repository as a potluck: an eclectic mix of code for various needs.
 
+- ** I'm refreshing the scripts here, so check back often (I'm cleaning them up a bit and will add them back when they're ready)
+
 ## Table of Contents
 
 - [About](#about)  
-- [Usage](#usage)  
 - [Scripts Overview](#scripts-overview)  
 - [Contributions](#contributions)  
 - [License](#license)
@@ -22,25 +23,6 @@ While the scripts vary in scope and purpose, they all share a common goal: to ma
 
 ---
 
-## Usage
-
-1. Clone the repository:
-   \`\`\`bash
-   git clone git@github.com:<your-username>/DevPotluck.git
-   cd DevPotluck
-   \`\`\`
-
-2. Browse the collection and pick a script that suits your needs. Each script should include a brief explanation of its purpose in the header comments or in an associated README file in its folder.
-
-3. Run the scripts using their respective interpreters. For example, if it's a Python script:
-   \`\`\`bash
-   python3 script_name.py
-   \`\`\`
-
-4. Review any prerequisites or dependencies in the script's header comments before running.
-
----
-
 ## Scripts Overview
 
 Here are some of the types of scripts you’ll find in this repo:
@@ -50,8 +32,6 @@ Here are some of the types of scripts you’ll find in this repo:
 - **Utility Functions**: Quick and helpful functions for everyday coding.
 - **Explorations**: Proof-of-concept or experimental code.
 - **Miscellaneous**: Anything else that didn’t quite fit in a category but is still worth sharing.
-
-Each script is in its own folder, often with a short README or detailed comments to explain its purpose and usage.
 
 ---
 
