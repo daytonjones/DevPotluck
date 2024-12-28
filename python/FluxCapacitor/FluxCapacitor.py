@@ -27,11 +27,11 @@ class FluxToInfluxQLTranslator:
         if not from_match:
             raise ValueError("[red]Invalid Flux query: Missing 'from()' clause[/red]")
         bucket = from_match.group(1).strip()
-        print(f"[DEBUG] Extracted bucket: {bucket}")  # Debugging
+#        print(f"[DEBUG] Extracted bucket: {bucket}")  # Debugging
 
         # Extract field name if available
         field = field_match.group(1).strip() if field_match else None
-        print(f"[DEBUG] Extracted field: {field}")  # Debugging
+#        print(f"[DEBUG] Extracted field: {field}")  # Debugging
 
         # Generate human-readable description
         if human:
@@ -107,13 +107,13 @@ class InfluxQLToFluxTranslator:
         # Extract components
         select_fields, measurement, where_clause, group_by, limit = select_match.groups()
         measurement = measurement.strip()
-        print(f"[DEBUG] Extracted measurement: {measurement}")
+#        print(f"[DEBUG] Extracted measurement: {measurement}")
 
         if where_clause:
             where_clause = where_clause.strip()
-            print(f"[DEBUG] Extracted WHERE clause: {where_clause}")
+#            print(f"[DEBUG] Extracted WHERE clause: {where_clause}")
         else:
-            print("[DEBUG] WHERE clause not found or is empty.")
+#            print("[DEBUG] WHERE clause not found or is empty.")
 
         # Generate human-readable description
         if human:
@@ -156,7 +156,7 @@ class InfluxQLToFluxTranslator:
 
     def _translate_where(self, where_clause):
         # Debugging: Check the initial WHERE clause
-        print(f"[DEBUG] Raw WHERE clause: {where_clause}")
+#        print(f"[DEBUG] Raw WHERE clause: {where_clause}")
 
         # Refined regex to capture valid conditions
         condition_pattern = re.compile(
@@ -171,7 +171,7 @@ class InfluxQLToFluxTranslator:
             valid_conditions.append(f"r.{field.strip()} {operator} {value.strip()}")
 
         # Debugging: Output the processed conditions
-        print(f"[DEBUG] Processed WHERE conditions: {valid_conditions}")
+#        print(f"[DEBUG] Processed WHERE conditions: {valid_conditions}")
 
         # Return the Flux filter string
         return f'|> filter(fn: (r) => {" and ".join(valid_conditions)})'
