@@ -53,5 +53,4 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 ---
 
 Enjoy exploring **DevPotluck**! If you have feedback, suggestions, or just want to say hi, feel free to open an issue.
-"""
 
