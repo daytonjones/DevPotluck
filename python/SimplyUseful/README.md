@@ -87,11 +87,11 @@ asyncio.run(async_fetch_data())
 The module includes a comprehensive suite of unit tests. To run the tests:
 
 1. Install pytest and pytest-asyncio:
-   ```bash
+```bash
 pip install pytest pytest-asyncio
 ```
 2. Execute the tests:
-    ```bash
+```bash
 pytest unit_tests/
 ```
 ## Contributing
