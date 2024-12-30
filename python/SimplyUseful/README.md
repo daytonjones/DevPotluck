@@ -27,9 +27,23 @@ A Python module providing a collection of reusable utility functions, classes, a
 
 ## Installation
 
-Simply clone the repository and import the module into your Python project.
+Use pip (recommeded method):
 ```bash
-git clone https://github.com/your-username/simply_useful.git
+pip install simply-useful
+```
+
+Or clone the repository and import the module into your Python project.
+```bash
+# this will checkout ONLY simply_useful and not the whole repo
+git clone --no-checkout git@github.com:daytonjones/DevPotluck.git
+cd DevPotluck/
+git sparse-checkout init
+git sparse-checkout set python/SimplyUseful
+git checkout main
+git clone https://github.com/daytonjones/DevPotluck/tree/main/python/SimplyUseful
+# do this instead to checkout my entire repo
+#git clone git@github.com:daytonjones/DevPotluck.git
+cp python/SimplyUseful/simply_useful.py <your_project_folder>
 ```
 ## Usage
 
